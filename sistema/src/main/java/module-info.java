@@ -5,7 +5,7 @@ module conta.sistema {
 
     // expondo porta de entrada (driver)
 
-    exports conta.sistema.casouso.porta.imp;
+    exports conta.sistema.casouso.porta;
 
     // expondo sistema negocio
 

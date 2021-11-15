@@ -17,11 +17,11 @@ import java.math.BigDecimal;
 @Named
 public class PortaTransferenciaImp implements PortaTransferencia {
 
-    private ContaRepositorio repositorio;
-    private Transferencia transferencia;
+    private final ContaRepositorio repositorio;
+    private final Transferencia transferencia;
 
     @Inject
-    public PortaTransferenciaImp(ContaRepositorio repositorio, Transferencia transferencia) {
+    public PortaTransferenciaImp(final ContaRepositorio repositorio, final Transferencia transferencia) {
         this.repositorio = repositorio;
         this.transferencia = transferencia;
     }
