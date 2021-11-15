@@ -25,7 +25,7 @@ public class Conta {
     }
 
     public void creditar(BigDecimal valorCredito) throws NegocioException {
-        if (isNull(valorCredito) || BigDecimal.ZERO.compareTo(valorCredito) <= 0) {
+        if (isNull(valorCredito) || valorCredito.compareTo(BigDecimal.ZERO) <= 0) {
             obrigatorio("Valor crédito");
         }
 
@@ -33,7 +33,7 @@ public class Conta {
     }
 
     public void debitar(BigDecimal valorDebito) throws NegocioException {
-        if (isNull(valorDebito) || BigDecimal.ZERO.compareTo(valorDebito) <= 0) {
+        if (isNull(valorDebito) || valorDebito.compareTo(BigDecimal.ZERO) <= 0) {
             obrigatorio("Valor debito");
         }
 
